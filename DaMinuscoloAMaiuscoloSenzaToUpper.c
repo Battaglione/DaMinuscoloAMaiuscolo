@@ -14,7 +14,9 @@ int main (){
     strcpy(m,s);
 
     for(i = 0; i < strlen(m); i++){
-        m[i] = m[i] - 32;
+        if(m[i] >= 97 && m[i] <= 122){
+            m[i] = m[i] - 32;
+        }
     }
     
     printf("Il nome finale e' ");
