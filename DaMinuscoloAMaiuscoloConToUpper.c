@@ -8,8 +8,10 @@ int main (){
     char s[MAX], m[MAX];
     int i;
 
-    printf("Inserire un nome: ");
-    gets(s);
+    do{
+        printf("Inserire un nome: ");
+        gets(s);
+    }while(strlen(s) > MAX);
 
     strcpy(m,s);
 
